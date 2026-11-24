@@ -8,12 +8,12 @@
 # shipping_db_user: "{{ vault_shipping_db_user }}"
 # shipping_db_password: "{{ vault_shipping_db_password }}"
 
-mongodb_host: mongodb.shariffdevops.online
-redis_host: redis.shariffdevops.online
-catalogue_host: catalogue.shariffdevops.online
-cart_host: cart.shariffdevops.online
-user_host: user.shariffdevops.online
-rabbitmq_host: rabbitmq.shariffdevops.online
-mysql_host: mysql.shariffdevops.online
-shipping_host: shipping.shariffdevops.online
-payment_host: payment.shariffdevops.online
+mongodb_host: mongodb-{{ env }}.shariffdevops.online
+redis_host: redis-{{ env }}.shariffdevops.online
+catalogue_host: catalogue-{{ env }}.shariffdevops.online
+cart_host: cart-{{ env }}.shariffdevops.online
+user_host: user-{{ env }}.shariffdevops.online
+rabbitmq_host: rabbitmq-{{ env }}.shariffdevops.online
+mysql_host: mysql-{{ env }}.shariffdevops.online
+shipping_host: shipping-{{ env }}.shariffdevops.online
+payment_host: payment-{{ env }}.shariffdevops.online
